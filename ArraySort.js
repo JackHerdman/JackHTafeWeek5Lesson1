@@ -44,3 +44,26 @@ let chronologicalOrder = events
 console.log(chronologicalOrder);
 console.log();
 
+// Q3 - Sort the following array in alphabetical order by last name, then by first name
+let people = [
+    {
+        firstName: "Margaret",
+        lastName: "Cox"
+    }, {
+        firstName: "Aaryan",
+        lastName: "Bauer"
+    }, {
+        firstName: "Asma",
+        lastName: "Bauer"
+    }, {
+        firstName: "Jazmin",
+        lastName: "Flowers"
+    }
+];
+
+console.log("Question 3 - Sort names in Alphabetical Order last name first");
+let alphabeticalOrder = people
+.sort((person1, person2) => person1.firstName.toLowerCase() > person2.firstName.toLowerCase())
+.sort((person1, person2) => person1.lastName.toLowerCase() > person2.lastName.toLowerCase());
+console.log(alphabeticalOrder)
+console.log();
